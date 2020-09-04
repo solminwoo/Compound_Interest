@@ -377,13 +377,16 @@ const Compound = () => {
 						<Form>
 							<Grid container justify="center" spacing={3}>
 								<h1>Compound Interest Calculator</h1>
-								<a href="https://www.youtube.com/watch?v=Fd37eXfipX4">
-									<h4>Watch YouTube Demo</h4>
-								</a>
-								<h4> | </h4>
-                <a href="https://github.com/solminwoo/Compound_Interest">
-									<h4>Github</h4>
-								</a>
+                <hr></hr>
+								<div className="sub-title" style={{display:"flex"}}>
+									<a href="https://www.youtube.com/watch?v=Fd37eXfipX4">
+										<h4>Watch YouTube Demo</h4>
+									</a>
+									<h4> | </h4>
+									<a href="https://github.com/solminwoo/Compound_Interest">
+										<h4>Github</h4>
+									</a>
+								</div>
 								<Grid item justify="center">
 									<div style={{ margin: 10 }}>
 										<FormControl error={errors.int != null ? true : false}>
