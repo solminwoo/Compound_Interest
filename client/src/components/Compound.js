@@ -381,7 +381,7 @@ const Compound = () => {
 									<h4>Watch YouTube Demo</h4>
 								</a>
 								<h4> | </h4>
-                <a href="https://github.com/solminwoo/compound_interest">
+                <a href="https://github.com/solminwoo/Compound_Interest">
 									<h4>Github</h4>
 								</a>
 								<Grid item justify="center">
