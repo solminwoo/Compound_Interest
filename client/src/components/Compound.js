@@ -13,6 +13,7 @@ import {
 	Radio,
 	Select,
 } from '@material-ui/core';
+import { Link } from '@material-ui/core/';
 import { withStyles } from '@material-ui/core/styles';
 import { green, purple } from '@material-ui/core/colors';
 import * as Yup from 'yup';
@@ -374,19 +375,20 @@ const Compound = () => {
 					validationSchema={validationSchema}
 				>
 					{({ values, errors, isSubmitting, touched }) => (
-						<Form>
+						<Form style={{margin:"15px"}}>
 							<Grid container justify="center" spacing={3}>
 								<h1>Compound Interest Calculator</h1>
-                <hr></hr>
-								<div className="sub-title" style={{display:"flex"}}>
-									<a href="https://www.youtube.com/watch?v=Fd37eXfipX4">
-										<h4>Watch YouTube Demo</h4>
-									</a>
-									<h4> | </h4>
-									<a href="https://github.com/solminwoo/Compound_Interest">
-										<h4>Github</h4>
-									</a>
-								</div>
+								<Grid container justify="center">
+									<div className="sub-title" style={{display:"flex"}}>
+										<Link href="https://www.youtube.com/watch?v=Fd37eXfipX4">
+											<h4 style={{width:"300px"}}>Watch YouTube Demo</h4>
+										</Link>
+                    <h3>|</h3>
+										<Link href="https://github.com/solminwoo/Compound_Interest">
+											<h4 style={{width:"300px"}}>Github</h4>
+										</Link>
+									</div>
+								</Grid>
 								<Grid item justify="center">
 									<div style={{ margin: 10 }}>
 										<FormControl error={errors.int != null ? true : false}>
@@ -464,14 +466,14 @@ const Compound = () => {
 									<div style={{ marginBottom: 10 }}>
 										{/* <p>
                       <span style={{ marginRight: 5, marginLeft: 30 }}>
-                        Start of Year
+                      Start of Year
                       </span>
                       <MyRadio name="endOfYear" type="radio" value="start" />
-                    </p>
-
-                    <p>
+                      </p>
+                      
+                      <p>
                       <span style={{ marginRight: 5, marginLeft: 30 }}>
-                        End of Year
+                      End of Year
                       </span>
                       <MyRadio name="endOfYear" type="radio" value="end" />
                     </p> */}
